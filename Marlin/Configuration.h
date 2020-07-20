@@ -136,8 +136,8 @@
   #if PRINTER == ENDER3_OGMC
     #define MOTHERBOARD BOARD_BTT_SKR_MINI_E3_V2_0
   #elif PRINTER == ENDER3_CRABS
-    #define MOTHERBOARD BOARD_BTT_SKR_MINI_E3_V2_0
-#endif
+    #define MOTHERBOARD BOARD_BTT_SKR_MINI_E3_V1_2
+  #endif
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
