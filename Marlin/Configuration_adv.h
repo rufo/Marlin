@@ -371,7 +371,7 @@
  * The fan turns on automatically whenever any driver is enabled and turns
  * off (or reduces to idle speed) shortly after drivers are turned off.
  */
-#if PRINTER == ENDER3_OGMC
+#if MOTHERBOARD == BOARD_BTT_SKR_MINI_E3_V2_0
   #define USE_CONTROLLER_FAN
 #endif
 #if ENABLED(USE_CONTROLLER_FAN)
@@ -2372,8 +2372,8 @@
    * Set *_SERIAL_TX_PIN and *_SERIAL_RX_PIN to match for all drivers
    * on the same serial port, either here or in your board's pins file.
    */
-  #if PRINTER == ENDER3_OGMC
-  #define  X_SLAVE_ADDRESS 0
+  #if MOTHERBOARD == BOARD_BTT_SKR_MINI_E3_V2_0
+    #define  X_SLAVE_ADDRESS 0
     #define  Y_SLAVE_ADDRESS 2
     #define  Z_SLAVE_ADDRESS 1
     #define X2_SLAVE_ADDRESS 0
@@ -2389,23 +2389,23 @@
     #define E5_SLAVE_ADDRESS 0
     #define E6_SLAVE_ADDRESS 0
     #define E7_SLAVE_ADDRESS 0
-  #elif PRINTER == ENDER3_CRABS
-  #define  X_SLAVE_ADDRESS 0
-  #define  Y_SLAVE_ADDRESS 0
-  #define  Z_SLAVE_ADDRESS 0
-  #define X2_SLAVE_ADDRESS 0
-  #define Y2_SLAVE_ADDRESS 0
-  #define Z2_SLAVE_ADDRESS 0
-  #define Z3_SLAVE_ADDRESS 0
-  #define Z4_SLAVE_ADDRESS 0
-  #define E0_SLAVE_ADDRESS 0
-  #define E1_SLAVE_ADDRESS 0
-  #define E2_SLAVE_ADDRESS 0
-  #define E3_SLAVE_ADDRESS 0
-  #define E4_SLAVE_ADDRESS 0
-  #define E5_SLAVE_ADDRESS 0
-  #define E6_SLAVE_ADDRESS 0
-  #define E7_SLAVE_ADDRESS 0
+  #elif MOTHERBOARD == BOARD_BTT_SKR_MINI_E3_V1_2
+    #define  X_SLAVE_ADDRESS 0
+    #define  Y_SLAVE_ADDRESS 0
+    #define  Z_SLAVE_ADDRESS 0
+    #define X2_SLAVE_ADDRESS 0
+    #define Y2_SLAVE_ADDRESS 0
+    #define Z2_SLAVE_ADDRESS 0
+    #define Z3_SLAVE_ADDRESS 0
+    #define Z4_SLAVE_ADDRESS 0
+    #define E0_SLAVE_ADDRESS 0
+    #define E1_SLAVE_ADDRESS 0
+    #define E2_SLAVE_ADDRESS 0
+    #define E3_SLAVE_ADDRESS 0
+    #define E4_SLAVE_ADDRESS 0
+    #define E5_SLAVE_ADDRESS 0
+    #define E6_SLAVE_ADDRESS 0
+    #define E7_SLAVE_ADDRESS 0
   #endif
 
   /**
